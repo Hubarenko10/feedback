@@ -14,15 +14,14 @@ export const FeedbackOptions = ({options,onLeaveFeedback})=>{
     })
 }
 
-
 function renderIcon(variant){
 switch (variant) {
     case 'good':
-        return <BsEmojiHeartEyes />
+        return <BsEmojiHeartEyes fill="green" />
     case 'neutral':
-        return <BsEmojiNeutral />
+        return <BsEmojiNeutral fill="yellow"/>
     case 'bad':
-        return <BsEmojiFrown />
+        return <BsEmojiFrown fill="red"/>
         
     default:
         throw new Error('Unexpected value of option')
